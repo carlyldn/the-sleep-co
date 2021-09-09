@@ -4,6 +4,42 @@
     box-sizing: border-box;
 }
 
-h1 {
-    color: red;
+/* ---------- Temporary styles for structural HMTL ----------*/
+
+* {
+    padding: 0.5rem;
+    border: 2px solid rgb(225, 225, 225);
 }
+
+body {
+    border: none;
+}
+
+html {
+    border: none;
+}
+
+/* ------ Image Classes -------- */
+
+.bg-image {
+    background-image: url('/images/the-sleep-co-bed.jpg');
+    background-size: cover;
+    min-height: 25vh;
+}
+
+
+/* --------- Universal Styles & utility classes ---------- */
+
+.padding {
+    padding: 5%;
+}
+
+.padding-s {
+    padding: 1rem;
+}
+
+.bg-dark {
+    background-color: #192B37;
+    color: white;
+}
+
