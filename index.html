@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
 
-<!-- This is the head of the HTML where we add external resources and metadata-->
+<!------- This is the head of the HTML where we add external resources and metadata ------->
 <head>
 
     <!-- Add the title of the site which will appear in the broswer tab -->
     <title>The Sleep Co</title>
 
-    <!-- This is our Gridlex stylesheet -->
+    <!---------- Gridlex stylesheet ---------->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
-    <!-- This is our Google Fonts -->
+    <!--------- Google Fonts, Catamaran (200,400,500,800)---------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
 
     <!-- This is our fontawesome icons -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- This is our CSS/custom stylesheet, this always goes last! -->
+    <!---------- CSS/custom stylesheet, this always goes last! ---------->
     <link rel="stylesheet" href="/style.css">
 
 </head>
@@ -26,27 +29,28 @@
 <body>
 
     <!---------- Header Banner --------->
-<header class="padding grid">
+<header class="padding grid text-center tall-100">
     <div class="col-12-middle">
-        <h3>Sleep like a baby</h3>
-        <h1>The ultimate mattress solution</h1>
+        <h3><span class="featured-text">Sleep</span> like a baby</h3>
+        <h1 class="normal-weight">The ultimate mattress solution</h1>
     </div>
 </header>
 
 <!---------- Grid section ---------->
 
 <section class="grid">
-    <div class="padding col-6">
-        <h2>Built to last a lifetime</h2>
+    <div class="padding col-6-middle">
+        <h2>Built to last a <span class="featured-text">lifetime</span></h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati repellat corrupti alias corporis id voluptates soluta tempore asperiores ipsum illum assumenda debitis eveniet aliquam error nihil cumque, nisi rem illo?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ad modi, et quisquam minus possimus quia! Impedit adipisci vitae fuga, maxime cumque quo esse, neque libero nam sit sunt amet.</p>
     </div>
 
-    <div class="bg-image col-6">Bed image</div>
+    <div class="bg-image col-6 tall-50 bg-bed"></div>
 
-    <div class="bg-image col-6">Dog image</div>
+    <div class="bg-image col-6 tall-50 bg-dog"></div>
 
-    <div class="padding col-6">
-        <h2>So soft you'll melt</h2>
+    <div class="padding col-6-middle">
+        <h2>So <span class="featured-text">soft</span> you'll melt</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem enim itaque facilis et fugit cumque ipsam assumenda molestiae eligendi, sequi quae, accusantium molestias, modi vel! Perspiciatis sunt pariatur quo ut.</p>
     </div>
 </section>
@@ -54,7 +58,7 @@
 <!-------- Features section -------- -->
 <section class="padding bg-dark grid"> 
     <div class="padding-s col-12">
-        <h2>Features you will love</h2>
+        <h2 class="text-center"><span class="featured-text">Features</span> you will love</h2>
     </div>
     <div class="padding-s col-3">
         <i class="fas fa-cloud"></i>
@@ -76,24 +80,29 @@
 
 <!------------ Yellow banner ------------->
 
-<section class="padding">
-    <h3>Never underestimate the power of a good night sleep</h3>
+<section class="padding text-center bg-pillow tall-60 grid">
+    <div class="col-12-middle">
+        <h3 class="big-text">
+            <span class="small-text normal-weight">Never underestimate the power of</span>
+            <br> a good night <span class="featured-text-light">sleep</span>
+        </h3>
+    </div>
 </section>
 
 <!----------- Testimonial section ------------>
 
-<section class="padding grid">
-    <div class="col-1">
-        <span>"</span>
+<section class="padding-l grid">
+    <div class="col-1 text-right">
+        <span class="quote-icon">“</span>
     </div>
 
-    <div class="col-10">
-        <p>I've never experienced sleep like this.  Omg I really love this mattress.  I want to buy one for every member of my family!</p>
-        <p>- A very happy customer</p>
+    <div class="col-10-middle text-center">
+        <p class="medium-text light-weight">I've never experienced sleep like this.  Omg I really love this mattress.  I want to buy one for every member of my family!</p>
+        <p class="subtitle">- A very happy customer</p>
     </div>
 
     <div class="col-1">
-        <span>"</span>
+        <span class="quote-icon">”</span>
     </div>
 </section>
 
@@ -101,16 +110,18 @@
 <!------------ Footer -------------->
 
 <footer class="padding grid-spaceBetween bg-dark">
-    <div class="col-4">
-        <h2>Let's connect</h2>
+    <div class="col-4-bottom">
+        <h2>Let's <span class="featured-text">
+            <br> connect</span>
+        </h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur corrupti nisi perspiciatis veritatis rerum, repudiandae sunt quas, consequuntur ducimus delectus excepturi, possimus quae aperiam reprehenderit! Fugit autem fugiat possimus iste?</p>
     </div>
 
-    <div class="col-6">
-        <p>Call: 0800 044 0345</p>
-        <p>Email: hello@thesleep.co</p>
-        <p>Store: 123 London Bridge, England</p>
-        <p>Instagram: @thesleepco</p>
+    <div class="col-5-bottom">
+        <p><strong>Call</strong>: <a href="tel:#">0800 044 0345</a></p>
+        <p><strong>Email</strong>: <a href="mailto:#">hello@thesleep.co</a></p>
+        <p><strong>Store</strong>: 123 London Bridge, England</p>
+        <p><strong>Instagram</strong>: <a href="#">@thesleepco</a></p>
     </div>
 
 </footer>
