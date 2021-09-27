@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+/* Remove Gridlex auto padding */
+
+[class*=col-] {
+    padding: 0;
+}
+
 
 /* ------ Image Classes -------- */
 
@@ -41,12 +47,22 @@ body {
 /* -----Header styles-------*/
 
 header {
+    padding: 2%;
+}
+
+.header-links {
+    margin: 0.8rem;
+}
+
+/* -------- Banner / Section Styles --------*/
+
+.banner {
     background-image: url('/images/the-sleep-co-white.jpg');
     background-size: cover;
     background-position: 50% 60%;
 }
 
-header h3 {
+section h3 {
     font-size: 5.5rem;
     line-height: 1;
 }
@@ -82,6 +98,11 @@ a {
 a:hover {
     color: #FFBE00;
 }
+
+.logo {
+    font-size: 2rem;
+    font-weight: normal;
+  }
 
 
 .featured-text {color: #FFBE00;}
@@ -140,4 +161,57 @@ a:hover {
     text-align: center;
     margin-bottom: 2rem;
 
+}
+
+/* Contact Form */
+
+form input, 
+form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 2px solid rgb(220,220,220);
+  outline: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+form select {
+  width: 15%;
+  margin-bottom: 0.5rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #FFBE00;
+}
+
+textarea {
+  min-height: 5rem;
+}
+
+form label {
+  margin-top: 1rem;
+  display: block; 
+  color: #FFBE00;
+  font-weight: bold;
+}
+
+form button {
+  background-color:#2D2B37;
+  color: white;
+  border: none; 
+  border-radius: 15px;
+  padding: 0.5rem 2rem;
+  letter-spacing: 0.1em;
+  margin: 0.5rem 0;
+}
+
+.container {
+  height: 200px;
+  position: relative;
+}
+
+form button:hover {
+  color: #F7D501;
 }
